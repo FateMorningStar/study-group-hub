@@ -83,7 +83,7 @@ SUPABASE_SERVICE_KEY=<service_role key> WRITE_DEMO_CREDS=1 node scripts/seed-and
 
 ## Deploy (frontend) — GitHub Pages ✅ live
 
-**Live URL: https://shuash11.github.io/study-group-hub/**
+**Live URL: https://fatemorningstar.github.io/study-group-hub/**
 
 Deploys automatically on every push to `main` via `.github/workflows/deploy.yml`:
 

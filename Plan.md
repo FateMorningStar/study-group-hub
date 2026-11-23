@@ -90,10 +90,11 @@ Trigger: new auth user → profile row. Trigger: new group → owner membership 
 
 ## Release record (WP10 — user-authorized)
 
-- Repo: https://github.com/Shuash11/study-group-hub (public, default branch `main`)
-- Release commit `1c362a9` = local HEAD = origin/main (verified via ls-remote); tag `v0.1.0` pushed; GitHub release created and marked Latest
+- Repo: https://github.com/FateMorningStar/study-group-hub (public, default branch `main`)
+- Release commit `1c362a9` = tagged `v0.1.0` commit (verified via ls-remote); tag `v0.1.0` pushed; GitHub release created and marked Latest
+- Repository relocated to `FateMorningStar/study-group-hub` on 2026-11-23; `main` and the unchanged `v0.1.0` tag were pushed without a version bump
 - Version bump 0.0.0 → 0.1.0 (package.json + lockfile); `.github/workflows/ci.yml` (lint + build) and `.github/workflows/release.yml` added by release-manager
-- Workflow runs: CI@main 42653590153 ✅ · CI@v0.1.0 42654840100 ✅ · Release@v0.1.0 42654840258 ✅ · CI@64fcf29 42657824208 ✅ (stray-file cleanup)
+- Original-repository workflow runs: CI@main 42653590153 ✅ · CI@v0.1.0 42654840100 ✅ · Release@v0.1.0 42654840258 ✅ · CI@64fcf29 42657824208 ✅ (stray-file cleanup)
 - No deployment to Vercel/Netlify (per user instruction — deploy is a future user action)
 - Post-release cleanup by Lead: stray empty `New Text Document.txt` untracked (local file kept), commit `64fcf29`, CI green
 
@@ -163,7 +164,7 @@ Both reviews read pre-fix code; migrations 0003/0004 and the client updates reso
 - 2026-11-10: WP10 release done (user-authorized). GitHub repo created with CI automation,
   main + v0.1.0 pushed, all workflow runs green — see Release record above.
 - 2026-11-10: GitHub Pages deployment added and verified live
-  (https://shuash11.github.io/study-group-hub/). Fixes along the way: Pages site enabled
+  (https://fatemorningstar.github.io/study-group-hub/). Fixes along the way: Pages site enabled
   once via owner API (workflow token can't create it), and Supabase env vars added as
   repo Actions secrets injected at build time — without them the bundle would have
   crashed at runtime despite CI passing. Verified: homepage 200, SPA fallback serves
